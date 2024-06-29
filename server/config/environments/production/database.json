@@ -1,0 +1,20 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "mongoose",
+      "settings": {
+        "database": "server",
+        "host": "${process.env.STRAPI_HOST}",
+        "srv": "true",
+        "port": "${process.env.STRAPI_PORT}",
+        "username": "${process.env.STRAPI_USERNAME}",
+        "password": "${process.env.STRAPI_PASSWORD}"
+      },
+      "options": {
+        "authenticationDatabase": "",
+        "ssl": true
+      }
+    }
+  }
+}

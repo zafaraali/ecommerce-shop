@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "brands",
+  "info": {
+    "name": "Brand"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "shoes": {
+      "collection": "shoe",
+      "via": "brand"
+    },
+    "imageUrl": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
